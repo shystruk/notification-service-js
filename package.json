@@ -1,8 +1,8 @@
 {
-  "name": "notification-service",
+  "name": "notification-service-js",
   "version": "0.0.1",
   "license": "MIT",
-  "description": "Custom Event Dispatcher",
+  "description": "Notification Service",
   "main": "./src/notification-service-module.js",
   "directories": {
     "src": "src"
