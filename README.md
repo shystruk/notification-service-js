@@ -2,7 +2,7 @@
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
 
-Notification service provides a simple show/hide message. It is based on [CustomeElements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) and may be integrated with any framework. Push notification works through [CustomEvent](https://www.npmjs.com/package/custom-event-js).
+Notification Service provides a simple show/hide message. It is based on [CustomeElements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) and may be integrated with any framework. Push notification works through [CustomEvent](https://www.npmjs.com/package/custom-event-js).
 
 
 ## Installation ##
