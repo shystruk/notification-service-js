@@ -5,6 +5,9 @@
 Notification Service provides a simple show/hide message. It is based on [CustomeElements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) and may be integrated with any framework. Push notification works through [CustomEvent](https://www.npmjs.com/package/custom-event-js).
 
 
+![](demo.gif)
+
+
 ## Installation ##
 #### npm
 `npm install notification-service-js`
