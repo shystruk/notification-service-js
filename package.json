@@ -1,0 +1,28 @@
+{
+  "name": "notification-service",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Custom Event Dispatcher",
+  "main": "./src/notification-service-module.js",
+  "directories": {
+    "src": "src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shystruk/notification-service"
+  },
+  "keywords": [
+    "notification",
+    "notification service",
+    "web component",
+    "custom element"
+  ],
+  "author": {
+    "name": "Vasyl Stokolosa",
+    "email": "v.stokol@gmail.com",
+    "url": "https://github.com/shystruk"
+  },
+  "dependencies": {
+    "custom-event-js": "^0.1.2"
+  }
+}
