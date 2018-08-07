@@ -1,4 +1,4 @@
-import template from './notification_service.template'
+import template from './notification-service.template'
 import CustomEvent from 'custom-event-js'
 
 class Notification_Service extends HTMLElement {
