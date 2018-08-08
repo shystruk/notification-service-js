@@ -2,7 +2,7 @@
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/notification-service-js) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) [![npm version](https://badge.fury.io/js/notification-service-js.svg)](https://badge.fury.io/js/notification-service-js)
 
 
-Notification Service provides a simple show/hide message. It is based on [CustomeElements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) and may be integrated with any framework. Push notification works through [CustomEvent](https://www.npmjs.com/package/custom-event-js).
+Notification Service provides a simple show/hide message. It is based on [CustomeElements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) and may be integrated with any framework. Push notification works through [CustomEvent](https://www.npmjs.com/package/custom-event-js) dispatcher.
 **Notification Service supports all popular browsers, including Internet Explorer 11, although some polyfills are required for IE 11. Please see [here](https://www.webcomponents.org/polyfills).** 
 
 
