@@ -3,9 +3,12 @@
   "version": "0.2.2",
   "license": "MIT",
   "description": "Notification Service based on Custom Elements",
-  "main": "./src/notification-service-module.js",
+  "main": "./build/notification-service-module.js",
   "directories": {
-    "src": "src"
+    "src": "build"
+  },
+  "scripts": {
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,14 @@
     "url": "https://github.com/shystruk"
   },
   "dependencies": {
-    "custom-event-js": "^0.1.2"
+    "custom-event-js": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
   }
 }
