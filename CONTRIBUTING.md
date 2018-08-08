@@ -10,9 +10,9 @@ Please feel free to contribute by submitting PR's for improvements to code snipp
 
 Found a problem? Have an enhancement? 
 
-First of all see if your issue or idea has already been [reported](https://github.com/shystruk/custom-event-js/issues).
+First of all see if your issue or idea has already been [reported](https://github.com/shystruk/notification-service-js/issues).
 
-If do not, open a [new one](https://github.com/shystruk/custom-event-js/issues/new).
+If do not, open a [new one](https://github.com/shystruk/notification-service-js/issues/new).
 
 
 ## Submitting a pull request
@@ -22,6 +22,7 @@ If do not, open a [new one](https://github.com/shystruk/custom-event-js/issues/n
 - Navigate to the cloned directory
 - Crate a new branch for the feature `git checkout -b new-feature`
 - Make changes
+- Run webpack for making bundles `npm run build`
 - Commit changes `git commit -am 'What is feature about? :)'`
 - Push to the branch `git push origin new-feature`
 - Submit a PR
