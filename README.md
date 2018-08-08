@@ -3,6 +3,7 @@
 
 
 Notification Service provides a simple show/hide message. It is based on [CustomeElements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) and may be integrated with any framework. Push notification works through [CustomEvent](https://www.npmjs.com/package/custom-event-js).
+**Notification Service supports all popular browsers, including Internet Explorer 11, although some polyfills are required for IE 11. Please see [here](https://www.webcomponents.org/polyfills).** 
 
 
 ![](demo.gif)
@@ -34,6 +35,14 @@ CustomEvent.DISPATCH('WEB_COMP_SHOW_NOTIFICATION', {
     message: 'Your message has been sent',
     timer: 3000 // default 5000, not required
 })
+```
+
+## Props
+### style-src ###
+The path to .css file, which will be pasted after common styles.
+
+```javascript
+<notification-service style-src="build/style.css"></notification-service>
 ```
 
 ## Contributing
