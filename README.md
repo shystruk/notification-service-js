@@ -21,7 +21,7 @@ Notification Service provides a simple show/hide message. It is based on [Custom
 import 'notification-service-js'
 
 // As a <script> tag
-<script src="node_modules/notification-service-js/src/notification-service.js"></script>
+<script src="node_modules/notification-service-js/build/notification-service.js"></script>
 
 // Insert web component into the DOM
 <notification-service></notification-service>
