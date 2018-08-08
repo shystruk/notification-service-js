@@ -8,7 +8,7 @@ class Notification_Service extends HTMLElement {
         this.attachShadow({mode: 'open'})
         this.shadowRoot.appendChild(template.content.cloneNode(true))
 
-        this.root = this.shadowRoot.querySelector('.web-nc')
+        this.rootNode = this.shadowRoot.querySelector('.web-nc')
     }
 
     connectedCallback() {
@@ -21,18 +21,39 @@ class Notification_Service extends HTMLElement {
         CustomEvent.OFF('WEB_COMP_SHOW_NOTIFICATION')
     }
 
+    attributeChangedCallback(attrName, oldVal, newVal) {
+        this.attachLink()
+    }
+
+    static get observedAttributes() {
+        return ['style-src'];
+    }
+
+    get styleSrc() {
+        return this.hasAttribute('style-src')
+    }
+
     renderNotification(data) {
         if (data) {
             let div = document.createElement('div')
             div.setAttribute('class', `web-nc-content fadein ${data.type}`)
             div.innerHTML = `<span>${data.message}</span>`
 
-            let divNode = this.root.appendChild(div)
+            let divNode = this.rootNode.appendChild(div)
 
             setTimeout(() => {
                 divNode.className += ' fadeout'
-                setTimeout(() => divNode.remove(), 1200)
+                setTimeout(() => divNode.parentNode.removeChild(divNode), 1200)
             }, data.timer || 5000)
+        }
+    }
+
+    attachLink() {
+        if (this.styleSrc) {
+            var link = document.createElement('link')
+            link.setAttribute('rel', 'stylesheet')
+            link.setAttribute('href', this.getAttribute('style-src'))
+            this.rootNode.parentNode.insertBefore(link, this.rootNode)
         }
     }
 }

@@ -9,7 +9,7 @@ template.innerHTML = `
             right: 0;
             color: #fff;
             font-size: 16px;
-            max-width: 290px;
+            width: 290px;
             margin: 0 auto;
             z-index: 999;
         }
@@ -82,7 +82,7 @@ template.innerHTML = `
             to   { opacity: 0; }
         }
     </style>
-
+    
     <div class="web-nc"></div>
 `
 
