@@ -44,6 +44,7 @@ The path to .css file, which will be pasted after common styles.
 ```javascript
 <notification-service style-src="build/style.css"></notification-service>
 ```
+![](Demo_Props.gif)
 
 ## Contributing
 
