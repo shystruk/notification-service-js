@@ -6,7 +6,7 @@ Notification Service provides a simple show/hide message. It is based on [Custom
 **Notification Service supports all popular browsers, including Internet Explorer 11, although some polyfills are required for IE 11. Please see [here](https://www.webcomponents.org/polyfills).** 
 
 
-![](Demo.gif)
+![](Demo_Original.gif)
 
 
 ## Installation ##
