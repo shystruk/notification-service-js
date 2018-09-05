@@ -9,6 +9,7 @@ class Notification_Service extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true))
 
         this.rootNode = this.shadowRoot.querySelector('.web-nc')
+        this.crossImg = ''
     }
 
     connectedCallback() {
@@ -22,11 +23,21 @@ class Notification_Service extends HTMLElement {
     }
 
     attributeChangedCallback(attrName, oldVal, newVal) {
-        this.attachLink()
+        if (this.styleSrc) {
+            this.attachLink()
+        }
+
+        if (this.crossImgSrc) {
+            this.crossImg = this.getAttribute('cross-img-src')
+        }
     }
 
     static get observedAttributes() {
-        return ['style-src'];
+        return ['style-src', 'cross-img-src']
+    }
+
+    get crossImgSrc() {
+        return this.hasAttribute('cross-img-src')
     }
 
     get styleSrc() {
@@ -34,12 +45,23 @@ class Notification_Service extends HTMLElement {
     }
 
     renderNotification(data) {
+        var divNode
+
         if (data) {
-            let div = document.createElement('div')
+            var div = document.createElement('div')
             div.setAttribute('class', `web-nc-content fadein ${data.type}`)
             div.innerHTML = `<span>${data.message}</span>`
 
-            let divNode = this.rootNode.appendChild(div)
+            divNode = this.rootNode.appendChild(div)
+
+            if (this.crossImg) {
+                var img = document.createElement('img')
+                img.setAttribute('src', this.crossImg)
+                img.setAttribute('alt', '')
+                img.addEventListener('click', () => divNode.parentNode.removeChild(divNode))
+
+                divNode.appendChild(img)
+            }
 
             setTimeout(() => {
                 divNode.className += ' fadeout'
@@ -49,12 +71,10 @@ class Notification_Service extends HTMLElement {
     }
 
     attachLink() {
-        if (this.styleSrc) {
-            var link = document.createElement('link')
-            link.setAttribute('rel', 'stylesheet')
-            link.setAttribute('href', this.getAttribute('style-src'))
-            this.rootNode.parentNode.insertBefore(link, this.rootNode)
-        }
+        var link = document.createElement('link')
+        link.setAttribute('rel', 'stylesheet')
+        link.setAttribute('href', this.getAttribute('style-src'))
+        this.rootNode.parentNode.insertBefore(link, this.rootNode)
     }
 }
 

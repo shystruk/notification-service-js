@@ -14,9 +14,21 @@ template.innerHTML = `
             z-index: 999;
         }
         .web-nc-content {
+            position: relative;
             margin-top: 10px;
-            padding: 15px 15px 17px;
+            padding: 15px 20px 17px 15px;
             line-height: 1.3;
+        }
+        .web-nc-content:hover img {
+            display: block;
+        }
+        .web-nc-content img {
+            height: 10px;
+            cursor: pointer;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            display: none;
         }
         .web-nc-content.success {
             background: #43A047;
@@ -26,7 +38,7 @@ template.innerHTML = `
         }
         .web-nc-content.error {
             background: #FF5722;
-        }
+        }        
         .web-nc-content.fadein {
             -webkit-animation: fadein 2s;
             -moz-animation: fadein 2s;
