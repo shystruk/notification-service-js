@@ -65,7 +65,7 @@ class Notification_Service extends HTMLElement {
 
             setTimeout(() => {
                 divNode.className += ' fadeout'
-                setTimeout(() => divNode.parentNode.removeChild(divNode), 1200)
+                setTimeout(() => divNode.parentNode && divNode.parentNode.removeChild(divNode), 1200)
             }, data.timer || 5000)
         }
     }
