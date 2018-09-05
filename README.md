@@ -6,7 +6,7 @@ Notification Service provides a simple show/hide message. It is based on [Custom
 **Notification Service supports all popular browsers, including Internet Explorer 11, although some polyfills are required for IE 11. Please see [here](https://www.webcomponents.org/polyfills).** 
 
 
-![](demo.gif)
+![](Demo_Original.gif)
 
 
 ## Installation ##
@@ -38,10 +38,16 @@ CustomEvent.DISPATCH('WEB_COMP_SHOW_NOTIFICATION', {
 ```
 
 ## Props
+### cross-img-src ###
+The path to an image (png/svg/jpg) file, which will be used for a cross icon.
+```html
+<notification-service cross-img-src="../images/cross.svg"></notification-service>
+```
+
 ### style-src ###
 The path to .css file, which will be pasted after common styles.
 
-```javascript
+```html
 <notification-service style-src="build/style.css"></notification-service>
 ```
 ![](Demo_Props.gif)

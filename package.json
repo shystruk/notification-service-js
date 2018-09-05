@@ -1,6 +1,6 @@
 {
   "name": "notification-service-js",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "license": "MIT",
   "description": "Notification Service based on Custom Elements",
   "main": "./build/notification-service-module.js",
