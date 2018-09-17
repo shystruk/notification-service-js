@@ -11,7 +11,7 @@ template.innerHTML = `
             font-size: 16px;
             width: 290px;
             margin: 0 auto;
-            z-index: 999;
+            z-index: 999999;
         }
         .web-nc-content {
             position: relative;
