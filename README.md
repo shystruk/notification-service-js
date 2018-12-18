@@ -37,6 +37,26 @@ CustomEvent.DISPATCH('WEB_COMP_SHOW_NOTIFICATION', {
 })
 ```
 
+## Options
+```javascript
+CustomEvent.DISPATCH('EVENT_NAME', options)
+```
+
+### type ###
+Type: `string` <br>
+Values: `success, error, warning` <br>
+A class which will be added to the notification content `.web-nc-content.<type>`. Depends on the class CSS styles will be applied to the content. You can add your own type and add styles trough prop `cross-img-src`.
+
+### message ###
+Type: `string` <br>
+Content which will be displayed inside notification
+
+### timer ###
+Type: `number` <br>
+Default: 5000 <br>
+Time in milliseconds how long notification will be showing
+
+
 ## Props
 ### cross-img-src ###
 The path to an image (png/svg/jpg) file, which will be used for a cross icon.
