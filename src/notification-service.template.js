@@ -38,7 +38,7 @@ template.innerHTML = `
         }
         .web-nc-content.error {
             background: #FF5722;
-        }        
+        }
         .web-nc-content.fadein {
             -webkit-animation: fadein 2s;
             -moz-animation: fadein 2s;
@@ -94,7 +94,7 @@ template.innerHTML = `
             to   { opacity: 0; }
         }
     </style>
-    
+
     <div class="web-nc"></div>
 `
 

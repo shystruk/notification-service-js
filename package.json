@@ -1,39 +1,39 @@
 {
-  "name": "notification-service-js",
-  "version": "0.6.1",
-  "license": "MIT",
-  "description": "Notification Service based on Custom Elements",
-  "main": "./build/notification-service-module.js",
-  "directories": {
-    "src": "build"
-  },
-  "scripts": {
-    "build": "webpack --mode=production"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/shystruk/notification-service"
-  },
-  "keywords": [
-    "notification",
-    "notification service",
-    "web component",
-    "custom element"
-  ],
-  "author": {
-    "name": "Vasyl Stokolosa",
-    "email": "v.stokol@gmail.com",
-    "url": "https://github.com/shystruk"
-  },
-  "dependencies": {
-    "custom-event-js": "^0.2.1"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "uglifyjs-webpack-plugin": "^1.2.7",
-    "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0"
-  }
+	"name": "notification-service-js",
+	"version": "0.6.1",
+	"license": "MIT",
+	"description": "Notification Service based on Custom Elements",
+	"main": "./build/notification-service-module.js",
+	"directories": {
+		"src": "build"
+	},
+	"scripts": {
+		"build": "webpack --mode=production"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shystruk/notification-service"
+	},
+	"keywords": [
+		"notification",
+		"notification service",
+		"web component",
+		"custom element"
+	],
+	"author": {
+		"name": "Vasyl Stokolosa",
+		"email": "v.stokol@gmail.com",
+		"url": "https://github.com/shystruk"
+	},
+	"dependencies": {
+		"custom-event-js": "^0.2.1"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-loader": "^7.1.5",
+		"babel-preset-env": "^1.7.0",
+		"uglifyjs-webpack-plugin": "^1.2.7",
+		"webpack": "^4.16.5",
+		"webpack-cli": "^3.1.0"
+	}
 }
