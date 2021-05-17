@@ -1,6 +1,6 @@
 {
 	"name": "notification-service-js",
-	"version": "0.6.2",
+	"version": "0.6.3",
 	"license": "MIT",
 	"description": "Notification Service based on Custom Elements",
 	"main": "./build/notification-service-module.js",
@@ -26,7 +26,7 @@
 		"url": "https://github.com/shystruk"
 	},
 	"dependencies": {
-		"custom-event-js": "^0.2.1"
+		"custom-event-js": "^1.0.2"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
